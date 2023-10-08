@@ -1,28 +1,35 @@
 package HW.HW1;
 
-import Seminar.Seminar1.zadacha.Product;
-import Seminar.Seminar1.zadacha.mashineCola;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        HotDrinks coffee = new HotDrinks("coffee", 150, 40, 150);
-        HotDrinks cacao = new HotDrinks("cacao", 300, 45, 200);
-        HotDrinks tea = new HotDrinks("tea", 250, 50, 300);
 
-        List<HotDrinks> list = new ArrayList<>();
-        list.add(coffee);
-        list.add(cacao);
-        list.add(tea);
+        // создаем горячие напитки
+        Products coffee = new ProductsHotDrinks("coffee", 100, 100, 40);
+        Products cacao = new ProductsHotDrinks("cacao", 200, 150, 45);
+        Products tea = new ProductsHotDrinks("tea", 50, 200, 35);
 
-        VendingMashine vendingMachine = new VendingMashine();
-        vendingMachine.getProduct(ArrayList<HotDrinks>) list);
+        // помещаем горячие напитки в коллекцию
+        List<Products> drinks = new ArrayList<>();
+        drinks.add(coffee);
+        drinks.add(cacao);
+        drinks.add(tea);
 
-        HotDrinksCoffee hotDrinkCoffee = new HotDrinksCoffee("coffee", 150, 40, 150);
-        System.out.println(hotDrinkCoffee.getInfo());
+        // создаем автомат и наполняем его напитками
+        HotDrinksVendingMachine HDM = new HotDrinksVendingMachine(drinks);
 
-        vendingMachine.getProduct("coffee", 150, 40, 150);
+        // выводим список напитков из коллекции drinks
+        System.out.println("\nГорячие напитки в автомате:");
+
+        for (Products drink : drinks)
+            System.out.println(drink.toString());
+
+//         System.out.println(HDM);
+//        HDM.getProduct("coffee", 100, 40);
+//        HDM.getProduct("cacao", 150, 45);
+//        HDM.getProduct("tea", 200, 35);
+
     }
 }
