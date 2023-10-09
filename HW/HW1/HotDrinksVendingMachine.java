@@ -23,6 +23,5 @@ public class HotDrinksVendingMachine extends VendingMashine {
 //        }
 //        System.out.printf("Напиток: %s объем = %d и t = %d отсутствует в автомате!\n", name, volume, temperature);
 //    }
-
     }
 }

@@ -14,6 +14,6 @@ public class VendingMashine {
     }
 
     public void getProduct(String name, int volume, int temperature) {
-        System.out.printf("Будьте оторожны, самый горячий напиток: " + name + ", его температура составляет " + temperature + ", объем напитка: " + volume);
+        System.out.printf("Cамый горячий напиток: " + name + ", его температура составляет " + temperature + ", объем напитка: " + volume);
     }
 }

@@ -26,9 +26,11 @@ public class Main {
         for (Products drink : drinks)
             System.out.println(drink.toString());
 
-//         System.out.println(HDM);
+
+        System.out.println("---------------------------------------");
+        System.out.println(HDM);
 //        HDM.getProduct("coffee", 100, 40);
-//        HDM.getProduct("cacao", 150, 45);
+        HDM.getProduct("cacao", 150, 45);
 //        HDM.getProduct("tea", 200, 35);
 
     }
