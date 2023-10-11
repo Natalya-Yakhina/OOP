@@ -2,6 +2,10 @@ package Seminar.Seminar2.Zadanie1;
 
 public class Human extends Actor implements ActorBehaviour {
 
+    public Human(String name) {
+        super(name);
+    }
+
     @Override
     String getName() {
         return name;
@@ -10,13 +14,13 @@ public class Human extends Actor implements ActorBehaviour {
     @Override
     public void setMakeOrder() {
         isMakeOrder = true;
-        System.out.println("Заказ сделан");
+        //System.out.println("-- Заказ сделан --");
     }
 
     @Override
     public void setTakeOrder() {
         isTakeOrder = true;
-        System.out.println("Заказ выдан");
+        //System.out.println("-- Заказ выдан --");
     }
 
     @Override

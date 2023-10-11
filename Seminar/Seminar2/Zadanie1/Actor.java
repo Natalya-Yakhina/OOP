@@ -5,6 +5,11 @@ public abstract class Actor {
     protected boolean isMakeOrder; // protected - идентификатор доступа
     protected boolean isTakeOrder;
 
-    abstract String getName();
+    public Actor(String name) {
+        this.name = name;
+        isMakeOrder = false;
+        isTakeOrder = false;
+    }
 
+    abstract String getName();
 }
