@@ -1,7 +1,7 @@
 package Seminar.Seminar2;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Capybara capybara = new Capybara();
         capybara.voice();
 
