@@ -1,10 +1,14 @@
 package Seminar.Seminar3.Zadacha1;
 
+import Seminar.Seminar3.Person;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
     String Name;
     String Surname;
     int Age;
-
     public Student(String name, String surname, int age) {
         Name = name;
         Surname = surname;

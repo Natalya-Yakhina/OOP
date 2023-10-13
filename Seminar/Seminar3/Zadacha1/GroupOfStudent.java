@@ -1,5 +1,7 @@
 package Seminar.Seminar3.Zadacha1;
 
+import Seminar.Seminar3.Person;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
