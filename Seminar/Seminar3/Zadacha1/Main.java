@@ -8,7 +8,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-
         Student student1 = new Student("Иван", "Иванов", 25);
         Student student2 = new Student("Петр", "Петров", 25);
         Student student3 = new Student("Сидор", "Сидоров", 25);

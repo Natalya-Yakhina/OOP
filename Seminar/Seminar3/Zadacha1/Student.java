@@ -9,6 +9,7 @@ public class Student {
     String Name;
     String Surname;
     int Age;
+
     public Student(String name, String surname, int age) {
         Name = name;
         Surname = surname;

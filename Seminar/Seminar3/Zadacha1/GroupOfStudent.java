@@ -16,10 +16,6 @@ public class GroupOfStudent implements Iterable<Student>, Comparable<Student> {
         this.numberOfStudent = numberOfStudent;
     }
 
-    public GroupOfStudent(List<Student> students) {
-        this.students = students;
-    }
-
     public String getNameOfGroup() {
         return nameOfGroup;
     }
@@ -79,6 +75,7 @@ public class GroupOfStudent implements Iterable<Student>, Comparable<Student> {
         }
     }
 }
+
 class NameLengthComparator implements Comparator<Student> { // любой вид сравнения задаем
     @Override
     public int compare(Student student1, Student student2) { // Comparator

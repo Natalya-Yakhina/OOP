@@ -9,6 +9,7 @@ public class Student implements Comparable<Student> {
     int age;
     private List<Student> studentsList;
     List<Student> studentGroup = new ArrayList<>();
+
     public Student(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
