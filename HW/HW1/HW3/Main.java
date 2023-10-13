@@ -30,10 +30,10 @@ public class Main {
             System.out.println("Имя: " + student.getLastName());
         }
 
-        Collections.sort(student1.students);
-        System.out.println("Сортировка по имени: " + student1.students);
+        Collections.sort(student1.studentGroup);
+        System.out.println("Сортировка по имени: " + student1.studentGroup);
 
-        Collections.sort(student1.students, new NameLengthComparator()); // лист и передаем компаратор
+        Collections.sort(student1.studentGroup, new NameLengthComparator()); // лист и передаем компаратор
         System.out.println("Сортировка по длинне имени: " + student1.getFirstName());
     }
 }
