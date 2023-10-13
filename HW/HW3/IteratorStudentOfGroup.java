@@ -1,4 +1,4 @@
-package HW.HW1.HW3;
+package HW.HW3;
 
 import java.util.Iterator;
 import java.util.List;

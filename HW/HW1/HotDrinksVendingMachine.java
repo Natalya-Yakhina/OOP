@@ -1,6 +1,5 @@
 package HW.HW1;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class HotDrinksVendingMachine extends VendingMashine {
