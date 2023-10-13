@@ -13,7 +13,7 @@ public class Main {
         Student student2 = new Student("Петр", "Петров", 25);
         Student student3 = new Student("Сидор", "Сидоров", 25);
 
-        GroupOfStudent groupOfStudent = new GroupOfStudent("Первая группа: ", new ArrayList<>());
+        GroupOfStudent groupOfStudent = new GroupOfStudent("первая", new ArrayList<>());
         groupOfStudent.addStudent(student1);
         groupOfStudent.addStudent(student2);
         groupOfStudent.addStudent(student3);
@@ -28,5 +28,11 @@ public class Main {
             Student student = iterator.next();
             System.out.println("Имя: " + student.getName());
         }
+
+//        Collections.sort(student1.students);
+//        System.out.println("Сортировка по имени: " + student1.students);
+
+        Collections.sort(student1.students, new NameLengthComparator()); // лист и передаем компаратор
+        System.out.println("Сортировка по длинне имени: " + student1.students);
     }
 }

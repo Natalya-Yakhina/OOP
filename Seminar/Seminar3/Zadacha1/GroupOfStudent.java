@@ -1,19 +1,23 @@
 package Seminar.Seminar3.Zadacha1;
 
-import Seminar.Seminar3.Person;
-
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-public class GroupOfStudent implements Iterable<Student> {
+public class GroupOfStudent implements Iterable<Student>, Comparable<Student> {
     String nameOfGroup;
-    private List<Student> numberOfStudent = new ArrayList<Student>();
+    List<Student> numberOfStudent = new ArrayList<Student>();
     private int index = 0;
+
 
     public GroupOfStudent(String nameOfGroup, List<Student> numberOfStudent) {
         this.nameOfGroup = nameOfGroup;
         this.numberOfStudent = numberOfStudent;
+    }
+
+    public GroupOfStudent(List<Student> students) {
+        this.students = students;
     }
 
     public String getNameOfGroup() {
@@ -49,6 +53,11 @@ public class GroupOfStudent implements Iterable<Student> {
         return new StudentIterator();
     }
 
+    @Override
+    public int compareTo(Student o) {
+        return this.nameOfGroup.compareTo(o.getName());
+    }
+
     private class StudentIterator implements Iterator<Student> {
 
         @Override
@@ -69,4 +78,11 @@ public class GroupOfStudent implements Iterable<Student> {
             numberOfStudent.remove(index);
         }
     }
+}
+class NameLengthComparator implements Comparator<Student> { // любой вид сравнения задаем
+    @Override
+    public int compare(Student student1, Student student2) { // Comparator
+        return student1.getName().length() - student2.getName().length(); // сравнение по длинне имени
+    }
+
 }
