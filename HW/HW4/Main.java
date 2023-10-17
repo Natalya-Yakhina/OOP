@@ -1,16 +1,10 @@
 package HW.HW4;
 
-import Seminar.Seminar4.Zadacha1.Dogs;
-import Seminar.Seminar4.Zadacha1.User;
-import Seminar.Seminar4.Zadacha1.UserComparator;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    private int category;
-
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
         List<Teacher> teachers = new ArrayList<>();
 
@@ -49,8 +43,6 @@ public class Main {
 
         managements.sort(new TeacherComparator<Management>());
         System.out.println("----------- СПИСОК РУКОВОДИТЕЛЕЙ -----------");
-        System.out.println(managements);
-
         System.out.println(managements);
 
     }
