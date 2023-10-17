@@ -26,6 +26,7 @@ public class TeacherIterator<T extends Teacher> implements Iterator<T> {
         }
         return null;
     }
+
     public void remove() {
         TeacherList = new ArrayList<>();
         counter = 0;
