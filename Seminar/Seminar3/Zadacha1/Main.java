@@ -31,7 +31,7 @@ public class Main {
 //        Collections.sort(student1.students);
 //        System.out.println("Сортировка по имени: " + student1.students);
 
-        Collections.sort(student1.students, new NameLengthComparator()); // лист и передаем компаратор
-        System.out.println("Сортировка по длинне имени: " + student1.students);
+//        Collections.sort(student1.students, new NameLengthComparator()); // лист и передаем компаратор
+//        System.out.println("Сортировка по длинне имени: " + student1.students);
     }
 }
