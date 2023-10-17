@@ -1,8 +1,10 @@
 package Seminar.Seminar4.Zadacha1;
 
+import HW.HW4.Teacher;
 import Seminar.Seminar1.Dog;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {

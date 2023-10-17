@@ -1,35 +1,36 @@
 package HW.HW4;
 
 public class Teacher {
-    String firstName;
     String lastName;
-    String surName;
+    String firstName;
+    String patronymic;
 
-    public Teacher(String firstName, String lastName, String surName) {
-        this.firstName = firstName;
+    public Teacher(String lastName, String firstName, String patronymic) {
         this.lastName = lastName;
-        this.surName = surName;
+        this.firstName = firstName;
+        this.patronymic = patronymic;
     }
 
-    public Teacher(){
-    }
-    public String getFirstName() {
-        return firstName;
+    public Teacher() {
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public String getSurName() {
-        return surName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getPatronymic() {
+        return patronymic;
     }
 
     @Override
     public String toString() {
         return "Учитель: " +
-                "фамилия = '" + firstName + '\'' +
-                ", имя = '" + lastName + '\'' +
-                ", отчество = '" + surName + '\'';
+                "фамилия = " + lastName +
+                ", имя = " + firstName +
+                ", отчество = " + patronymic;
     }
 }
