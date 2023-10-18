@@ -1,8 +1,4 @@
-package Lection.Lection_5_OOP_Ot_prostogo_k_practik.Calculator;
-
-import Lection.Lection_5_OOP_Ot_prostogo_k_practik.Calculator.CalcModel;
-import Lection.Lection_5_OOP_Ot_prostogo_k_practik.Calculator.Model;
-import Lection.Lection_5_OOP_Ot_prostogo_k_practik.Calculator.View;
+package Lection.Lection_5_OOP_Ot_prostogo_k_practik.Calc;
 
 public class PresenterOfT <T extends CalcModel> {
     View view;
