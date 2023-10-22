@@ -1,36 +1,36 @@
 package HW.HW5.Controller;
 
 import HW.HW5.Model.Student;
-import HW.HW5.Model.Type;
-import HW.HW5.Servise.ServiceData;
-import HW.HW5.Servise.StudentGroupService;
-import HW.HW5.View.StudentGroupView;
-import HW.HW5.View.StudentView;
+import HW.HW5.Model.StudyGroup;
+import HW.HW5.Model.Teacher;
+import HW.HW5.Servise.StudyGroupService;
 
 import java.util.List;
 
-public class Controller {
-    ServiceData dataService = new ServiceData();
-    StudentView studentView = new StudentView();
-    StudentGroupView studentGroupView = new StudentGroupView();
-    StudentGroupService studentGroupService = new StudentGroupService();
+public class Controller extends StudyGroupService {
 
-    public void createStudent(String name, String group, int age, int studentId){
-        dataService.create(name,group,age, Type.STUDENT);
+    StudyGroupService studyGroupService;
+    StudyGroup studyGroup = new StudyGroup();
+    public Controller() {
+        super();
+        this.studyGroupService = new StudyGroupService();
     }
-    public void createTeacher(String name, String group, int age, int teacherId){
-        dataService.create(name,group,age,Type.TEACHER);
-    }
-    public void getAllStudents(){
-        List<Student> students = dataService.getAllStudent();
-        for (Student s: students){
-            studentView.printOnConsole(s);
+
+    /**
+     * @return создание группы(Учитель+Студенты)
+     */
+    public StudyGroup showGroup(Teacher teacher, List<Student> listOfStudents) {
+        if (teacher != null && listOfStudents != null) {
+            studyGroup = studyGroupService.createStudyGroupService(teacher, listOfStudents);
+        } else {
+            System.out.println("Impossible to create group!");
         }
+        return studyGroup;
     }
-    public void printStudentGroup(){
-        studentGroupView.printStudentGroup(studentGroupService.getStudentGroup());
-    }
-    public void createStudentGroup(){
-        studentGroupService.createStudentGroup(dataService.getTeacher(),dataService.getAllStudent());
-    }
+//    public int showTeacher(Teacher teacher) {
+//        return studyGroupService.getTeacherID(teacher);
+//    }
+//    public List<Student> showStudents(List<Student> studentList) {
+//        return studyGroupService.getListOfStudent();
+//    }
 }

@@ -1,32 +1,24 @@
 package HW.HW5.Model;
 
 public class Teacher extends User {
-    private int teacherId;
+    protected String subject;
+    protected int teacherID;
 
-    public Teacher(String name, String group, int age, int teacherId) {
-        super(name, group, age);
-        this.teacherId = teacherId;
+    public Teacher(String name, String surname, int age, String subject, int teacherID) {
+        super(name, surname, age);
+        this.subject = subject;
+        this.teacherID = teacherID;
     }
-
-    public int getTeacherId() {
-        return teacherId;
+    /**
+     *
+     * @return ID учителя;
+     */
+    public int getTID() {
+        return teacherID;
     }
-
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
-    }
-
     @Override
     public String toString() {
-        return "Teacher{" +
-                "teacherId=" + teacherId +
-                ", name='" + name + '\'' +
-                ", group='" + group + '\'' +
-                ", age=" + age +
-                '}';
+        return "Teacher Name:" + name +
+                ",Surname:" + surname + ",Teacher Id:" + teacherID + "\n";
     }
-//
-//    public void getInfoTeacher(int teacherId) { // получить информацию по студенту
-//        System.out.println("Student:" + teacherId);
-//    }
 }

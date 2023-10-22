@@ -1,17 +1,17 @@
 package HW.HW5.Model;
 
-public abstract class User {
+public class User {
     protected String name;
-    protected String group;
+    protected String surname;
     protected int age;
 
-    public User(String name, String group, int age) {
+    public User(String name, String surname, int age) {
         this.name = name;
-        this.group = group;
+        this.surname = surname;
         this.age = age;
     }
 
-    public User(String studentId) {
+    public User() {
     }
 
     public String getName() {
@@ -22,12 +22,12 @@ public abstract class User {
         this.name = name;
     }
 
-    public String getGroup() {
-        return group;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public int getAge() {
@@ -41,9 +41,8 @@ public abstract class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", group='" + group + '\'' +
-                ", age=" + age +
-                '}';
+                "name ='" + name + '\'' +
+                ", surname ='" + surname + '\'' +
+                ", age =" + age;
     }
 }
