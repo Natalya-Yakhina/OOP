@@ -1,25 +1,23 @@
 package HW.HW5.Controller;
 
 import HW.HW5.Model.Student;
-import HW.HW5.Model.StudyGroup;
+import HW.HW5.Model.StudentGroup;
 import HW.HW5.Model.Teacher;
-import HW.HW5.Servise.StudyGroupService;
+import HW.HW5.Servise.StudentGroupService;
 
 import java.util.List;
 
-public class Controller extends StudyGroupService {
+public class Controller extends StudentGroupService {
 
-    StudyGroupService studyGroupService;
-    StudyGroup studyGroup = new StudyGroup();
+    StudentGroupService studyGroupService;
+    StudentGroup studyGroup = new StudentGroup();
+
     public Controller() {
         super();
-        this.studyGroupService = new StudyGroupService();
+        this.studyGroupService = new StudentGroupService();
     }
 
-    /**
-     * @return создание группы(Учитель+Студенты)
-     */
-    public StudyGroup showGroup(Teacher teacher, List<Student> listOfStudents) {
+    public StudentGroup showGroup(Teacher teacher, List<Student> listOfStudents) { // формирование учебной группы учитель + студент, путем вызова метода из Servise
         if (teacher != null && listOfStudents != null) {
             studyGroup = studyGroupService.createStudyGroupService(teacher, listOfStudents);
         } else {
@@ -27,10 +25,4 @@ public class Controller extends StudyGroupService {
         }
         return studyGroup;
     }
-//    public int showTeacher(Teacher teacher) {
-//        return studyGroupService.getTeacherID(teacher);
-//    }
-//    public List<Student> showStudents(List<Student> studentList) {
-//        return studyGroupService.getListOfStudent();
-//    }
 }

@@ -1,33 +1,44 @@
 package HW.HW5.Model;
 
 public class User {
-    protected String name;
-    protected String surname;
+    protected String firstName;
+    protected String lastName;
+    protected String surName;
+
     protected int age;
 
-    public User(String name, String surname, int age) {
-        this.name = name;
-        this.surname = surname;
+    public User(String firstName, String lastName, String surName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.surName = surName;
         this.age = age;
     }
 
     public User() {
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
     }
 
     public int getAge() {
@@ -40,9 +51,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name ='" + name + '\'' +
-                ", surname ='" + surname + '\'' +
-                ", age =" + age;
+        return "User " +
+                "ФИО: " + firstName + lastName + ' ' + surName +
+                ", Возраст: " + age;
     }
 }
