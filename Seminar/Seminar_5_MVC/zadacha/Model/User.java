@@ -1,4 +1,4 @@
-package Seminar.Seminar5_MVC.zadacha.Model;
+package Seminar.Seminar_5_MVC.zadacha.Model;
 /**
  * @params User - шаблон для создания классов Студента и Учителя
  */

@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.zadacha.Controller;
+package Seminar.Seminar_5_MVC.zadacha.Controller;
 
-import Seminar.Seminar5_MVC.zadacha.Model.Student;
+import Seminar.Seminar_5_MVC.zadacha.Model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

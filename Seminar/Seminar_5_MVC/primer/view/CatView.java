@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.primer.view;
+package Seminar.Seminar_5_MVC.primer.view;
 
-import Seminar.Seminar5_MVC.primer.controller.CatVetController;
+import Seminar.Seminar_5_MVC.primer.controller.CatVetController;
 
 // view - фронтенд
 public class CatView {

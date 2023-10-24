@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.primer;
+package Seminar.Seminar_5_MVC.primer;
 
-import Seminar.Seminar5_MVC.primer.view.CatView;
+import Seminar.Seminar_5_MVC.primer.view.CatView;
 
 public class Main {
     public static void main(String[] args) {

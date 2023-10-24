@@ -1,4 +1,4 @@
-package Seminar.Seminar5_MVC.primer.model;
+package Seminar.Seminar_5_MVC.primer.model;
 // model - бэкенд
 public class Cat {
     private String name;

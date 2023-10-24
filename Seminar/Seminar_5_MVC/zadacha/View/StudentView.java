@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.zadacha.View;
+package Seminar.Seminar_5_MVC.zadacha.View;
 
-import Seminar.Seminar5_MVC.zadacha.Controller.StudentController;
+import Seminar.Seminar_5_MVC.zadacha.Controller.StudentController;
 
 // � Создать package – view. Работу продолжаем в нем
 //� Создать класс StudentView, содержащий в себе метод вывода в консоль

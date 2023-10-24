@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.zadacha;
+package Seminar.Seminar_5_MVC.zadacha;
 
-import Seminar.Seminar5_MVC.zadacha.View.StudentView;
+import Seminar.Seminar_5_MVC.zadacha.View.StudentView;
 
 /**
  * Реализация;

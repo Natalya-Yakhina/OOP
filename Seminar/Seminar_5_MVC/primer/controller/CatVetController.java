@@ -1,6 +1,6 @@
-package Seminar.Seminar5_MVC.primer.controller;
+package Seminar.Seminar_5_MVC.primer.controller;
 
-import Seminar.Seminar5_MVC.primer.model.Cat;
+import Seminar.Seminar_5_MVC.primer.model.Cat;
 
 import java.util.ArrayList;
 import java.util.List;
