@@ -1,5 +1,6 @@
 package Seminar.Seminar4.Zadacha1;
 
+
 public class Dogs extends User{
     int age;
 
