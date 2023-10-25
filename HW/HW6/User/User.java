@@ -6,6 +6,10 @@ import java.util.Objects;
 
 public class User extends UserBase {
 
+    // OSP - Принцип открытости/закрытости реализован путем создания getter & setter. При обращении к полям класса
+    // через эти методы соблюдается принцип закрытости для модификации, а создание классов-наследников позволяет
+    // соблюсти принцип открытости - то есть сущности открыты для дальнейших расширений.
+
     protected String firstName; // модификатором доступа protected: поля видны в пределах всех классов, находящихся в том же пакете,в пределах всех классов-наследников нашего класса.
     protected String lastName;
     protected String patronymic;
@@ -60,6 +64,7 @@ public class User extends UserBase {
         User user = (User) o;
         return Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(patronymic, user.patronymic);
     }
+
 
 //    if (getFirstName() != null ? !getFirstName().equals(user.getFirstName()) :
 //            user.getFirstName() != null) {
