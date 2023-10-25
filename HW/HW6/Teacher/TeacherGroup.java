@@ -52,6 +52,6 @@ public class TeacherGroup extends UserGroup implements Iterable<Teacher> {
 
     @Override
     public Iterator<Teacher> iterator() {
-        return new TeacherIterator<>(teacherGroupList);
+        return new TeacherIterator(teacherGroupList);
     }
 }

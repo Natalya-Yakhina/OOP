@@ -1,15 +1,17 @@
 package HW.HW6.Teacher;
 
+import HW.HW6.User.UserGroup;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class TeacherIterator<T extends Teacher> implements Iterator<T> {
+public class TeacherIterator extends UserGroup implements Iterator<Teacher> {
 
-    private List<T> TeacherList;
+    private List<Teacher> TeacherList;
     private int counter;
 
-    public TeacherIterator(List<T> teacherList) {
+    public TeacherIterator(List<Teacher> teacherList) {
         TeacherList = teacherList;
         this.counter = counter;
     }
@@ -20,13 +22,12 @@ public class TeacherIterator<T extends Teacher> implements Iterator<T> {
     }
 
     @Override
-    public T next() {
+    public Teacher next() {
         if (hasNext()) {
             return TeacherList.get(counter++);
         }
         return null;
     }
-
     public void remove() {
         TeacherList = new ArrayList<>();
         counter = 0;
