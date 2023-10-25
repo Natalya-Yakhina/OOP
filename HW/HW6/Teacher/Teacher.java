@@ -43,8 +43,8 @@ public class Teacher extends User implements Comparable<Teacher>, UserInterface 
     @Override
     public String toString() {
         return "Учитель: " +
-                "фамилия = " + lastName +
-                ", имя = " + firstName +
+                "фамилия = " + firstName +
+                ", имя = " + lastName +
                 ", отчество = " + patronymic;
     }
 }
