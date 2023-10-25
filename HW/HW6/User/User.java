@@ -9,12 +9,12 @@ public class User extends UserBase {
     protected String patronymic;
 
     // Принцип полиморфизма, то есть в зависимости от переданного типа данных можно применять одну и ту же функцию
-
     public User(String firstName, String lastName, String patronymic) {
         setFirstName(firstName);
         setLastName(lastName);
         setPatronymic(patronymic);
     }
+
     public User() {
     }
 
@@ -41,11 +41,9 @@ public class User extends UserBase {
     public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
     }
+
     @Override
     public String toString() {
-        return "Пользователь: " +
-                "Имя: " + firstName + '\'' +
-                ", Фамилия: " + lastName + '\'' +
-                ", Отчество: " + patronymic + '\'';
+        return "Пользователь: " + "Имя: " + firstName + '\'' + ", Фамилия: " + lastName + '\'' + ", Отчество: " + patronymic + '\'';
     }
 }
