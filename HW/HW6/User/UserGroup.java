@@ -5,7 +5,7 @@ import HW.HW6.AbstractClass.UserBaseGroup;
 public class UserGroup extends UserBaseGroup {
     int groupNumber;
 
-    public UserGroup(){
+    public UserGroup() {
 
     }
 
