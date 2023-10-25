@@ -47,9 +47,9 @@
 В рамках 4 семинара было создано 4 класса (User, Dog, UserComparator, UserIterator) все классы не абстрактные.
 В домашней работе к 4 семинару были созданны классы (Teacher, TeacherComparator, TeacherGroup, TeacherIterator)
 
-При работе над ДЗ_6 выполнена следующая реструктурзация проекта: 
+При работе над ДЗ_6 выполнено следующее: 
 
-1. Удален класс Dog из примера.
+1. Удален класс Dog.
 2. Добавлены классы Teacher, TeacherComparator, TeacherGroup, TeacherIterator, TeacherIterator, 
 для примера классов наследования из ДЗ_4. (больше классов для наследников добавлять не стала)
 2. Созданы абстрактные классы UserBase & UserBaseGroup.
