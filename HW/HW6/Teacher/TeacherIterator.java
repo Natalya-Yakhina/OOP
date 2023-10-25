@@ -1,4 +1,4 @@
-package HW.HW6;
+package HW.HW6.Teacher;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,5 +1,9 @@
 package HW.HW6;
 
+import HW.HW6.Teacher.Teacher;
+import HW.HW6.Teacher.TeacherComparator;
+import HW.HW6.Teacher.TeacherGroup;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,9 +1,12 @@
-package HW.HW6;
+package HW.HW6.Teacher;
 
 import java.util.Iterator;
 import java.util.List;
 
 public class TeacherGroup implements Iterable<Teacher> {
+    //    Принцип единственной ответственности реализован также в классах StudentGroup & TeacherGroup,
+//    которые наследуются от UserGroup.
+   // В классе Teacher применен принцип единственной ответственности (SRP), он наследует все поля от класса User и имеет одно поле (teacherId)
     private String groupName;
     private List<Teacher> teacherGroupList;
 

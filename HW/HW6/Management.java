@@ -1,5 +1,7 @@
 package HW.HW6;
 
+import HW.HW6.Teacher.Teacher;
+
 public class Management extends Teacher {
     int category; // категория руководителей
 
