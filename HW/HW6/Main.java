@@ -12,10 +12,10 @@ public class Main {
 
         List<Teacher> teachers = new ArrayList<>();
 
-        Teacher teacher1 = new Teacher("Жук", "Вера", "Ивановна");
-        Teacher teacher2 = new Teacher("Петров", "Александр", "Александрович");
-        Teacher teacher3 = new Teacher("Сидорова", "Екатерина", "Вениаминовна");
-        Teacher teacher4 = new Teacher("Як", "Анатолий", "Сергеевич");
+        Teacher teacher1 = new Teacher("Жук", "Вера", "Ивановна", 5);
+        Teacher teacher2 = new Teacher("Петров", "Александр", "Александрович", 1);
+        Teacher teacher3 = new Teacher("Сидорова", "Екатерина", "Вениаминовна", 3);
+        Teacher teacher4 = new Teacher("Як", "Анатолий", "Сергеевич", 2);
 
         teachers.add(teacher1);
         teachers.add(teacher2);
@@ -25,7 +25,7 @@ public class Main {
         System.out.println(teachers);
 
         System.out.println("----------- Comparator -----------");
-        teachers.sort(new TeacherComparator<>());
+        teachers.sort(new TeacherComparator());
         System.out.println(teachers);
 
         System.out.println("----------- Iterator -----------");
@@ -38,16 +38,16 @@ public class Main {
         TeacherGroup teachers1 = new TeacherGroup("1А", teachers);
         System.out.println(teachers1);
 //-------------------------------------------------------------------------------------------------------------------------
-
-        Management management1 = new Management("Алексеев", "Николай", "Николаевич", 1);
-        Management management2 = new Management("Лобованова", "Людмила", "Егоровна", 2);
-        Management management3 = new Management("Казьмин", "Александр", "Викторович", 3);
-
-        List<Management> managements = new ArrayList<>(List.of(management1, management2, management3));
-
-        managements.sort(new TeacherComparator<Management>());
-        System.out.println("----------- СПИСОК РУКОВОДИТЕЛЕЙ -----------");
-        System.out.println(managements);
+//
+//        Management management1 = new Management("Алексеев", "Николай", "Николаевич", 1);
+//        Management management2 = new Management("Лобованова", "Людмила", "Егоровна", 2);
+//        Management management3 = new Management("Казьмин", "Александр", "Викторович", 3);
+//
+//        List<Management> managements = new ArrayList<>(List.of(management1, management2, management3));
+//
+//        managements.sort(new TeacherComparator<Management>());
+//        System.out.println("----------- СПИСОК РУКОВОДИТЕЛЕЙ -----------");
+//        System.out.println(managements);
 
     }
 }
