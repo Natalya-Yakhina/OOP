@@ -8,5 +8,6 @@ public class Main {
         CarFactory carFactory = new CarFactory();
         carFactory.createCar("X5");
         carFactory.createCar("Volvo");
+        carFactory.createCar("Lada");
     }
 }
