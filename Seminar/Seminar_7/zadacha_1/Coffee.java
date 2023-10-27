@@ -27,6 +27,8 @@ class CoffeToCoffeeDecorator { // создать декоратор для во�
     public CoffeToCoffeeDecorator(Coffee coffee) {
         this.coffee = coffee;
     }
+    public void printCoffee(Coffee coffee){ //  т к может быть несколько декораторов
+    }
 }
 
 class CoffeDecorator extends CoffeToCoffeeDecorator {
@@ -41,7 +43,7 @@ class CoffeDecorator extends CoffeToCoffeeDecorator {
         this.syrup = syrup;
     }
 
-    public void printCoffe(Coffee coffee) {
+    public void printCoffee(Coffee coffee) {
         System.out.println(coffee + "sugar: " + sugar + ", " + "syrup: " + syrup);
     }
 }

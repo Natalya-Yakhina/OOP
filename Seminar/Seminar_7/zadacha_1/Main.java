@@ -5,8 +5,8 @@ package Seminar.Seminar_7.zadacha_1;
 public class Main {
     public static void main(String[] args) {
         Coffee coffee1 = new Coffee("Brasil", 40.5,0.3);
-        CoffeDecorator coffeDecorator = new CoffeDecorator(coffee1, true, false);
-        coffeDecorator.printCoffe(coffee1);
+        CoffeToCoffeeDecorator coffeDecorator = new CoffeDecorator(coffee1, true, false);
+        coffeDecorator.printCoffee(coffee1);
 
     }
 
