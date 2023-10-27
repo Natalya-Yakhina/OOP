@@ -22,23 +22,26 @@ public class Coffee {
 
 class CoffeToCoffeeDecorator { // создать декоратор для возможности добавления в кофе сахара/сиропов и.т.д
     private Coffee coffee;
-    protected boolean sugar;
-    protected boolean syrup;
 
-    public CoffeToCoffeeDecorator(Coffee coffee, boolean sugar, boolean syrup) {
+    // передаем кофе в метод
+    public CoffeToCoffeeDecorator(Coffee coffee) {
         this.coffee = coffee;
-        this.sugar = sugar;
-        this.syrup = syrup;
     }
 }
 
-class CoffeDecorator extends CoffeToCoffeeDecorator{
+class CoffeDecorator extends CoffeToCoffeeDecorator {
+
+    // объявляем добавки и обращаемся к ним
+    private boolean sugar;
+    private boolean syrup;
 
     public CoffeDecorator(Coffee coffee, boolean sugar, boolean syrup) {
-        super(coffee, sugar, syrup);
+        super(coffee);
+        this.sugar = sugar;
+        this.syrup = syrup;
     }
 
-    public void printCoffe(Coffee coffee){
+    public void printCoffe(Coffee coffee) {
         System.out.println(coffee + "sugar: " + sugar + ", " + "syrup: " + syrup);
     }
 }
