@@ -63,6 +63,10 @@ class ShapeFactory {
 
 // Adapter Pattern
 // в тех случаях, если два класса не совместимы
+
+//Adapter:
+//        OriginalOldClass (старый класс) --> ContinueClass(Промежуточный класс):
+//        конструктор старый = новый <-->NewClass(на основе старого) + используя методы старого
 class LegacyRectangle { // старый
     private int width;
     private int height;
