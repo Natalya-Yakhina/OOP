@@ -4,24 +4,16 @@ import HW.HW7_FINAL.Model.ComplexNumber;
 
 public interface iCalculator {
 
+// --------------- сложение ---------------
+
     ComplexNumber add(ComplexNumber n1, ComplexNumber n2);
 
-    /**
-     * умножение
-     *
-     * @param n1 первое кч
-     * @param n2 второе кч
-     * @return результат
-     */
+// --------------- умножение ---------------
+
     ComplexNumber multiply(ComplexNumber n1, ComplexNumber n2);
 
-    /**
-     * деление
-     * <p>
-     * * @param n1 первое кч
-     *
-     * @param n2 второе кч
-     * @return результат
-     */
+// --------------- деление ---------------
     ComplexNumber divide(ComplexNumber n1, ComplexNumber n2);
 }
+
+
