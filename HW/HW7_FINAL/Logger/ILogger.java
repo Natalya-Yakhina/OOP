@@ -1,5 +1,5 @@
 package HW.HW7_FINAL.Logger;
 
 public interface ILogger {
-    void loggerMessage(String message);
+    void loggerMessage(String message); // вывод сообщения при логировании
 }
