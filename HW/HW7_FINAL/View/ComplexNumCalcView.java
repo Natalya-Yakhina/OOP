@@ -23,36 +23,36 @@ public class ComplexNumCalcView {
             while (true) {
                 String operation = input("ВЫБИРИТЕ ОПЕРАЦИЮ: (+ / - / * / // )");
                 if (operation.equals("+")) {
-                    Double materialNum2 = inputDouble("Введите действительную часть числа для сложения: ");
-                    Double imaginaryNum2 = inputDouble("Введите мнимую часть числа для сложения: ");
+                    Double materialNum2 = inputDouble("Введите действительную часть комплексного числа для сложения: ");
+                    Double imaginaryNum2 = inputDouble("Введите мнимую часть комплексного числа для сложения: ");
                     ComplexNumber secondNum = new ComplexNumber(materialNum2, imaginaryNum2);
-                    System.out.println(String.format("Результат: (%s) + (%s) = (%s)", firstNum, secondNum, calculator.sum(firstNum, secondNum)));
+                    System.out.println(String.format("РЕЗУЛЬТАТ СЛОЖЕНИЯ: (%s) + (%s) = (%s)", firstNum, secondNum, calculator.sum(firstNum, secondNum)));
                     break;
                 }
                 if (operation.equals("-")) {
-                    Double materialNum2 = inputDouble("Введите действительную часть числа для вычитания: ");
-                    Double imaginaryNum2 = inputDouble("Введите мнимую часть числа для вычитания: ");
+                    Double materialNum2 = inputDouble("Введите действительную часть комплексного числа для вычитания: ");
+                    Double imaginaryNum2 = inputDouble("Введите мнимую часть комплексного числа для вычитания: ");
                     ComplexNumber secondNum = new ComplexNumber(materialNum2, imaginaryNum2);
-                    System.out.println(String.format("Результат: (%s) + (%s) = (%s)", firstNum, secondNum, calculator.difference(firstNum, secondNum)));
+                    System.out.println(String.format("РЕЗУЛЬТАТ ВЫЧИТАНИЯ: (%s) + (%s) = (%s)", firstNum, secondNum, calculator.difference(firstNum, secondNum)));
                     break;
                 }
                 if (operation.equals("*")) {
-                    Double materialNum2 = inputDouble("Введите действительную часть числа для умножения: ");
-                    Double imaginaryNum2 = inputDouble("Введите мнимую часть числа для умножения: ");
+                    Double materialNum2 = inputDouble("Введите действительную часть комплексного числа для умножения: ");
+                    Double imaginaryNum2 = inputDouble("Введите мнимую часть комплексного числа для умножения: ");
                     ComplexNumber secondNum = new ComplexNumber(materialNum2, imaginaryNum2);
-                    System.out.println(String.format("Результат: (%s) * (%s) = (%s)", firstNum, secondNum, calculator.multiplication(firstNum, secondNum)));
+                    System.out.println(String.format("РЕЗУЛЬТАТ УМНОЖЕНИЯ: (%s) * (%s) = (%s)", firstNum, secondNum, calculator.multiplication(firstNum, secondNum)));
                     break;
                 }
                 if (operation.equals("/")) {
-                    Double materialNum2 = inputDouble("Введите действительную часть комплексного числа делителя:");
-                    Double imaginaryNum2 = inputDouble("Введите мнимую часть комплексного числа делителя:");
+                    Double materialNum2 = inputDouble("Введите действительную часть комплексного числа для деления: ");
+                    Double imaginaryNum2 = inputDouble("Введите мнимую часть комплексного числа для деления: ");
                     ComplexNumber secondNum = new ComplexNumber(materialNum2, imaginaryNum2);
-                    System.out.println(String.format("Результат: (%s) / (%s) = (%s)", firstNum, secondNum, calculator.divide(firstNum, secondNum)));
+                    System.out.println(String.format("РЕЗУЛЬТАТ ДЕЛЕНИЯ: (%s) / (%s) = (%s)", firstNum, secondNum, calculator.divide(firstNum, secondNum)));
                     break;
                 }
             }
-            String cmd = input("Еще одна операция? (Yes/No)?");
-            if (cmd.equalsIgnoreCase("Yes")) {
+            String cmd = input("ЕЩЕ РАЗ? (ДА/НЕТ)?");
+            if (cmd.equalsIgnoreCase("ДА")) {
                 continue;
             }
             break;
