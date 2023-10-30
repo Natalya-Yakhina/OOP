@@ -6,11 +6,9 @@ public abstract class Num {
     public Num(double materialNum) {
         this.materialNum = materialNum;
     }
-
     public double getMaterialNum() {
         return materialNum;
     }
-
     public void setMaterialNum(double materialNum) {
         this.materialNum = materialNum;
     }
