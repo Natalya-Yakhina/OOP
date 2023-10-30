@@ -3,7 +3,6 @@ package HW.HW7_FINAL.Calc;
 import HW.HW7_FINAL.Model.ComplexNumber;
 
 public class CalculatorComplexNum implements ICalculator<ComplexNumber> {
-
     private ComplexNumber t1;
     private ComplexNumber t2;
 
