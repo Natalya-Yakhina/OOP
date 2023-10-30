@@ -11,6 +11,6 @@ public class Main {
     public static void main(String[] args) {
         ICalculator<ComplexNumber> calculator = new ComplexNumCalcLogger(new CalculatorComplexNum(), new Logger());
         ComplexNumCalcView calcView = new ComplexNumCalcView(calculator);
-        calcView.StartCalc();
+        calcView.startCalc();
     }
 }

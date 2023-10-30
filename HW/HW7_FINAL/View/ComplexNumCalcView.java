@@ -13,7 +13,7 @@ public class ComplexNumCalcView {
         this.calculator = calculator;
     }
 
-    public void StartCalc() {
+    public void startCalc() {
 
         while (true) {
             Double materialNum1 = inputDouble("Введите действительную часть комплексного числа: ");
