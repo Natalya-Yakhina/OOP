@@ -1,16 +1,16 @@
 package HW.HW7_FINAL;
 
-import HW.HW7_FINAL.Model.Calc.Summ;
+import HW.HW7_FINAL.Calc.CalculatorComplexNum;
+import HW.HW7_FINAL.Calc.ICalculator;
+import HW.HW7_FINAL.Logger.ComplexNumCalcLogger;
+import HW.HW7_FINAL.Logger.Logger;
 import HW.HW7_FINAL.Model.ComplexNumber;
+import HW.HW7_FINAL.View.ComplexNumCalcView;
 
 public class Main {
-
     public static void main(String[] args) {
-        ComplexNumber complexNumber = new ComplexNumber(5,9);
-        System.out.println(complexNumber);
-        System.out.println(complexNumber.add(complexNumber));
-        System.out.println(complexNumber.multiplication(complexNumber));
-        System.out.println(complexNumber.divide(complexNumber));
-
+        ICalculator<ComplexNumber> calculator = new ComplexNumCalcLogger(new CalculatorComplexNum(), new Logger());
+        ComplexNumCalcView calcView = new ComplexNumCalcView(calculator);
+        calcView.StartCalc();
     }
 }
