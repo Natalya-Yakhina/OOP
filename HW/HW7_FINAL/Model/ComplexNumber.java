@@ -1,7 +1,7 @@
 package HW.HW7_FINAL.Model;
 
 public class ComplexNumber extends Num {
-    double imaginaryNum; // Imaginary part - мнимая часть
+    double imaginaryNum; // imaginary part - мнимая часть
 
     public ComplexNumber(double materialNum, double imaginaryNum) {
         super(materialNum);
